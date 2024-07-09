@@ -457,8 +457,9 @@ textarea {
 }
 
 #footer .copyright {
-  margin: 0 0 15px;
+  margin: 0 0 60px;
   text-align: center;
+  
 }
 
 #footer .socials a:hover {
@@ -485,6 +486,7 @@ textarea {
 }
 
 .hero-block .carousel-item img {
+  height: 500px;
   width: 100%;
 }
 
@@ -1191,4 +1193,6 @@ textarea {
     font-size: 26px;
     margin: 0;
   }
+
+  
 }

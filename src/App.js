@@ -1,5 +1,7 @@
 
 import './App.css';
+import './Works.css';
+import './Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import React from 'react';

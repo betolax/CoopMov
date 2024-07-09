@@ -34,14 +34,13 @@ function AppHero() {
               return (
                 <Carousel.Item key={hero.id}>
                   <img
-                    className="d-block w-100"
+                    className="d-block h-50px w-100 "
                     src={hero.image}
                     alt={"slide " + hero.id}
                   />
                   <Carousel.Caption>
                     <h2>{hero.title}</h2>
-                    <p>{hero.description}</p>
-                    <a className="btn btn-primary" href={hero.link}>Learn More <i className="fas fa-chevron-right"></i></a>
+                    <h5>{hero.description}</h5>
                   </Carousel.Caption>             
                 </Carousel.Item>
               );

@@ -1,8 +1,10 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Image from 'react-bootstrap/Image';
+//import Col from 'react-bootstrap/Col';
+//import Image from 'react-bootstrap/Image';
 import Pagination from 'react-bootstrap/Pagination';
+import Carousel from 'react-bootstrap/Carousel';
+
 
 const worksData = [
   {
@@ -110,11 +112,18 @@ const worksData = [
     image: require('../assets/images/img19.jpg'),
     title: 'Network e Materiais ',
     subtitle: 'Network '
+  },
+  {
+    id: 16,
+    link: 'https://www.google.com',
+    image: require('../assets/images/img19.jpg'),
+    title: 'Network e Materiais ',
+    subtitle: 'Network '
   }
 
 ]
 
-let active = 2;
+let active = 1;
 let items = [];
 for (let number = 1; number <= 5; number++) {
   items.push(
@@ -130,14 +139,65 @@ function AppWorks() {
       <Container fluid>
         <div className="title-holder">
           <h2>Nossos Trabalhos</h2>
-          <div className="subtitle">nossos incríveis trabalhos</div>
+          <div className="subtitle">nossos incríveis trabalhoss</div>
         </div>
         <Row className='portfoliolist'>
+        
+                
+          <Carousel>
           {
             worksData.map(works => {
               return (
-                <Col sm={4} key={works.id}>
+              
+                <Carousel.Item key={works.id}>
+                 
+                  <img
+                   className="work-image"
+                  //  className="d-block w-100"
+                    src={works.image}
+                   alt={"slide " + works.id}
+                   
+                  />     
+                </Carousel.Item>
+                
+                );
+              })
+            }
+        </Carousel>
+
+                
+           
+        </Row>
+        <Pagination>{items}</Pagination>
+      </Container>  
+    </section>
+  );
+}
+
+/*
+
+<Carousel>
+          {
+            worksData.map(works => {
+              return (
+                <Carousel.Item key={works.id}>
+                  <img
+                    className="d-block w-100"
+                    src={works.image}
+                    alt={"slide " + works.id}
+                  />     
+                </Carousel.Item>
+                
+                );
+              })
+            }
+        </Carousel>
+
+        fotos
+
+        <Col sm={4} key={works.id}>
                   <div className='portfolio-wrapper'>
+                  
                     <a href={works.link}>
                       <Image src={works.image} />
                       <div className='label text-center'>
@@ -147,17 +207,9 @@ function AppWorks() {
                     </a>
                   </div>
                 </Col>
-              );
-            })
-          }
-        </Row>
-        <Pagination>{items}</Pagination>
-      </Container>  
-    </section>
-  );
-}
+                
 
-/*
+
 function AppWorks() {
   return (
     <section id="works" className="block works-block">

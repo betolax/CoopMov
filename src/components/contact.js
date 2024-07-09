@@ -9,52 +9,39 @@ function AppContact() {
     <section id="contact" className="block contact-block">
       <Container fluid>
         <div className="title-holder">
-          <h2>Contact us</h2>
-          <div className="subtitle">get connected with us</div>
+          <h2>Contacte-nos
+          </h2>
+          <div className="subtitle">Conecte-se Conosco </div>
         </div>
         <Form className='contact-form'>
           <Row>
             <Col sm={4}>
-              <Form.Control type="text" placeholder="Enter your full name" required />
+              <Form.Control type="text" placeholder="Escreva seu nome completo" required />
             </Col>
             <Col sm={4}>
-              <Form.Control type="email" placeholder="Enter your email address" required />
+              <Form.Control type="email" placeholder="Digite o seu endereço de email" required />
             </Col>
             <Col sm={4}>
-              <Form.Control type="tel" placeholder="Enter your contact number" required />
+              <Form.Control type="tel" placeholder="Digite o seu Contacto" required />
             </Col>
           </Row>
           <Row>
             <Col sm={12}>
-              <Form.Control as="textarea" placeholder="Enter your contact message" required />
+              <Form.Control as="textarea" placeholder="Digite sua mensagem de contato" required />
             </Col>
           </Row>
           <div className='btn-holder'>
-            <Button type="submit">Submit</Button>
+            <Button type="submit">Enviar
+            </Button>
           </div>
         </Form>
       </Container>
       <div className='google-map'>
-        <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d971.942654288157!2d40.538016249614!3d-12.986518015901341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2smz!4v1718804900249!5m2!1spt-BR!2smz"></iframe>
-    
+        <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d7775.460208481148!2d40.53382237466004!3d-12.989106677492659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTLCsDU5JzE3LjQiUyA0MMKwMzInMjAuNSJF!5e0!3m2!1spt-BR!2smz!4v1720510665709!5m2!1spt-BR!2smz" ></iframe>
+
       </div>
       <Container fluid>
-        <div className='contact-info'>
-          <ul>
-            <li>
-              <i className="fas fa-envelope"></i>
-              geral@coopmov.com
-            </li>
-            <li>
-              <i className="fas fa-phone"></i>
-              +258 870940008, 840105370
-            </li>
-            <li>
-              <i className="fas fa-map-marker-alt"></i>
-              cidade de Pemba, Cabo Delgado, Moçambique. 
-            </li>
-          </ul>
-        </div>
+ 
       </Container>
     </section>
   );

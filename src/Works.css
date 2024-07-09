@@ -1,0 +1,21 @@
+/* src/components/Works.css */
+.works-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .work-item {
+    flex: 1 1 300px; /* Flexbox para organizar os itens, ajustando o tamanho mínimo */
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+  
+  .work-image {
+    width: 200%;
+    height: 600px; /* Define a altura desejada */
+    /*object-fit: cover; /* Corta a imagem para caber no container sem distorcer */
+    border-radius: 8px;
+  }
+  

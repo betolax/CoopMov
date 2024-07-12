@@ -1,11 +1,13 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import React, { Component }  from 'react';
 
 const servicesData = [
   {
     id: 1,
-    icon: 'fas fa-screwdriver-wrench',
+   // icon: 'fa-brands fa-square-instagram',
+    icon: "fa-regular fa-calendar-days",
     title: 'Consultoria em Planejamento Estratégico',
     description: 
     <ul class="list-unstyled">
@@ -14,7 +16,7 @@ const servicesData = [
   },
   {
     id: 2,
-    icon: 'fas fa-laptop-code',
+    icon: 'fa-solid fa-landmark',
     title: 'Gestão Financeira',
     description:  <ul class="list-unstyled">
   <li><i class="fas fa-arrow-right-long"></i> Orientação em controle financeiro, análise de custos e otimização de recursos;</li>
@@ -22,7 +24,7 @@ const servicesData = [
   },
   {
     id: 3,
-    icon: 'fas fa-network-wired',
+    icon: 'fa-solid fa-chart-simple',
     title: 'Capacitação e Desenvolvimento',
     description: <ul class="list-unstyled">
 <li><i class="fas fa-arrow-right-long"></i> Cursos e workshops em habilidades técnicas e pessoais, incluindo liderança, marketing e gestão de projetos;</li>
@@ -30,7 +32,7 @@ const servicesData = [
   },
   {
     id: 4,
-    icon: 'fas fa-eye',
+    icon: 'fa-solid fa-comments-dollar',
     title: 'Empreendedorismo',
     description: <ul class="list-unstyled">
 <li><i class="fas fa-arrow-right-long"></i> Suporte na criação e desenvolvimento de novos negócios, com foco em jovens e mulheres;</li>
@@ -38,7 +40,7 @@ const servicesData = [
   },
   {
     id: 5,
-    icon: 'fas fa-eye',
+    icon: 'fa-solid fa-network-wired',
     title: 'Networking e Mentoria',
     description: <ul class="list-unstyled">
 <li><i class="fas fa-arrow-right-long"></i> Programas de mentoria e oportunidades de networking 
@@ -47,7 +49,7 @@ para troca de experiências e conhecimentos;</li>
   },
   {
     id: 6,
-    icon: 'fas fa-eye',
+    icon: 'fa-solid fa-lightbulb',
     title: 'Inovações e Diferenciais',
     description: <ul class="list-unstyled">
 <li><i class="fas fa-arrow-right-long"></i> Abordagem personalizada e adaptada às necessidades 
@@ -67,7 +69,7 @@ function AppServices() {
       <Container fluid>
         <div className="title-holder">
           <h2>Nossos servicos</h2>
-          <div className="subtitle">servicos que fornecemos</div>
+          <div className="subtitle">serviços que forneçemos</div>
         </div>
         <Row>
           {

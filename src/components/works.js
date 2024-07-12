@@ -1,10 +1,10 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-//import Col from 'react-bootstrap/Col';
-//import Image from 'react-bootstrap/Image';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 import Pagination from 'react-bootstrap/Pagination';
 import Carousel from 'react-bootstrap/Carousel';
-
+import React, { Component }  from 'react';
 
 const worksData = [
   {
@@ -50,49 +50,6 @@ const worksData = [
     subtitle: 'Formação '
   },
   {
-    id: 7,
-    link: 'https://www.google.com',
-    image: require('../assets/images/img4.jpg'),
-    title: 'Capacitação e Desenvolvimento ',
-    subtitle: 'Formação '
-  },
-  {
-    id: 8,
-    link: 'https://www.google.com',
-    image: require('../assets/images/img5.jpg'),
-    title: 'Capacitação e Desenvolvimento ',
-    subtitle: 'Formação'
-  },
-  {
-    id: 9,
-    link: 'https://www.google.com',
-    image: require('../assets/images/img9.jpg'),
-    title: 'Capacitação e Desenvolvimento ',
-    subtitle: 'Formação '
-  },
-  {
-    id:10,
-    link: 'https://www.google.com',
-    image: require('../assets/images/img10.jpg'),
-    title: 'Capacitação e Desenvolvimento ',
-    subtitle: 'Formação '
-  },
-  {
-    id: 11,
-    link: 'https://www.google.com',
-    image: require('../assets/images/img11.jpg'),
-    title: 'Capacitação e Desenvolvimento ',
-    subtitle: 'Formação '
-  }
-  ,
-  {
-    id: 12,
-    link: 'https://www.google.com',
-    image: require('../assets/images/img12.jpg'),
-    title: 'Capacitação e Desenvolvimento ',
-    subtitle: 'Formação '
-  },
-  {
     id: 13,
     link: 'https://www.google.com',
     image: require('../assets/images/img13.jpg'),
@@ -112,16 +69,173 @@ const worksData = [
     image: require('../assets/images/img19.jpg'),
     title: 'Network e Materiais ',
     subtitle: 'Network '
+  }
+
+]
+
+
+
+const CeremonyData = [
+  {
+    id: 1,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 1.png'),
+    title: 'Consultoria em planeamento estratégico ',
+    subtitle: 'Consultoria'
+  },
+  {
+    id: 2,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 2.png'),
+    title: 'Consultoria em planeamento estratégico',
+    subtitle: 'Consultoria'
+  },
+  {
+    id: 3,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 3.png'),
+    title: 'Consultoria em planeamento estratégico',
+    subtitle: 'Consultoria'
+  },
+  {
+    id: 4,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 4.png'),
+    title: 'Capacitação e Desenvolvimento ',
+    subtitle: 'Formação '
+  },
+  {
+    id: 5,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 5.png'),
+    title: 'Capacitação e Desenvolvimento ',
+    subtitle: 'Formação '
+  },
+  {
+    id: 6,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 6.png'),
+    title: 'Capacitação e Desenvolvimento ',
+    subtitle: 'Formação '
+  },
+  {
+    id: 7,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 7.png'),
+    title: 'Capacitação e Desenvolvimento ',
+    subtitle: 'Formação '
+  },
+  {
+    id: 8,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 8.png'),
+    title: 'Capacitação e Desenvolvimento ',
+    subtitle: 'Formação'
+  },
+  {
+    id: 9,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 9.png'),
+    title: 'Capacitação e Desenvolvimento ',
+    subtitle: 'Formação '
+  },
+  {
+    id:10,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 10.png'),
+    title: 'Capacitação e Desenvolvimento ',
+    subtitle: 'Formação '
+  },
+  {
+    id: 11,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 11.png'),
+    title: 'Capacitação e Desenvolvimento ',
+    subtitle: 'Formação '
+  }
+  ,
+  {
+    id: 12,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 12.png'),
+    title: 'Capacitação e Desenvolvimento ',
+    subtitle: 'Formação '
+  },
+  {
+    id: 13,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 13.png'),
+    title: 'Network e Materiais ',
+    subtitle: 'Network '
+  },
+  {
+    id: 14,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 14.png'),
+    title: 'Network e Materiais ',
+    subtitle: 'Network '
+  },
+  {
+    id: 15,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 15.png'),
+    title: 'Network e Materiais ',
+    subtitle: 'Network '
   },
   {
     id: 16,
     link: 'https://www.google.com',
-    image: require('../assets/images/img19.jpg'),
+    image: require('../assets/images/Coperado 16.png'),
+    title: 'Network e Materiais ',
+    subtitle: 'Network '
+  },
+  {
+    id: 17,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 17.png'),
+    title: 'Network e Materiais ',
+    subtitle: 'Network '
+  },
+  {
+    id: 18,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 18.png'),
+    title: 'Network e Materiais ',
+    subtitle: 'Network '
+  },
+  {
+    id: 19,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 19.png'),
+    title: 'Network e Materiais ',
+    subtitle: 'Network '
+  },
+  {
+    id: 20,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 20.png'),
+    title: 'Network e Materiais ',
+    subtitle: 'Network '
+  },
+  {
+    id: 21,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 21.png'),
+    title: 'Network e Materiais ',
+    subtitle: 'Network '
+  },
+  {
+    id: 22,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Coperado 22.png'),
     title: 'Network e Materiais ',
     subtitle: 'Network '
   }
-
 ]
+
+
+let descricao = "Os nossos trabalhos que tem sido nas mas divesrsas areas"
+let descricao2 = "Cerimonia de Tomada de Posse dos Preidentes dos prelouros"
 
 let active = 1;
 let items = [];
@@ -139,24 +253,44 @@ function AppWorks() {
       <Container fluid>
         <div className="title-holder">
           <h2>Nossos Trabalhos</h2>
-          <div className="subtitle">nossos incríveis trabalhoss</div>
+          <div className="subtitle">nossos incríveis trabalhos</div>
         </div>
         <Row className='portfoliolist'>
         
-                
-          <Carousel>
+       
           {
             worksData.map(works => {
               return (
+                <Col sm={4} key={works.id}>
+                  <div className='portfolio-wrapper'>
+                    <a href={works.link}>
+                      <Image src={works.image} />
+                      <div className='label text-center'>
+                        <h3>{works.title}</h3>
+                        <p>{works.subtitle}</p>
+                      </div>
+                    </a>
+                  </div>
+                </Col>
+              );
+            })
+          }      
+        <Pagination> <h3>{descricao}</h3></Pagination>
+
+
+      {/*Tomada de posse dos presintes em formato de slide show */}
+        <Carousel>
+          {
+            CeremonyData.map(works => {
+              return (
               
-                <Carousel.Item key={works.id}>
+                <Carousel.Item key={works.id} >
                  
                   <img
                    className="work-image"
                   //  className="d-block w-100"
                     src={works.image}
-                   alt={"slide " + works.id}
-                   
+                   alt={"slide " + works.id}  
                   />     
                 </Carousel.Item>
                 
@@ -164,18 +298,27 @@ function AppWorks() {
               })
             }
         </Carousel>
-
-                
-           
         </Row>
-        <Pagination>{items}</Pagination>
+        <Pagination> <h3>{descricao2}</h3></Pagination>
       </Container>  
+      
+      
     </section>
   );
 }
 
 /*
 
+    
+        </Row>
+       <Pagination>{items}</Pagination>
+      </Container>  
+    </section>
+  );
+}
+
+
+  FORMATO DE SLIDE SHOW
 <Carousel>
           {
             worksData.map(works => {
@@ -193,11 +336,13 @@ function AppWorks() {
             }
         </Carousel>
 
-        fotos
+        fotos FORMATO DE GRADE DE MENU DETRO DO <Row className='portfoliolist'>
 
-        <Col sm={4} key={works.id}>
+         {
+            worksData.map(works => {
+              return (
+                <Col sm={4} key={works.id}>
                   <div className='portfolio-wrapper'>
-                  
                     <a href={works.link}>
                       <Image src={works.image} />
                       <div className='label text-center'>
@@ -207,8 +352,9 @@ function AppWorks() {
                     </a>
                   </div>
                 </Col>
-                
-
+              );
+            })
+          }      
 
 function AppWorks() {
   return (

@@ -2,11 +2,12 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
+import React, { Component }  from 'react';
 
 const teamsData = [
   {
     id: 1,
-    image: require('../assets/images/Perfil-1.jpg') ,
+    image: require('../assets/images/Perfil-1.png') ,
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -16,7 +17,7 @@ const teamsData = [
   },
   {
     id: 2,
-    image: require('../assets/images/Perfil-2.jpg'),
+    image: require('../assets/images/Perfil-2.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -26,7 +27,7 @@ const teamsData = [
   },
   {
     id: 3,
-    image: require('../assets/images/Perfil-3.jpg'),
+    image: require('../assets/images/Perfil-3.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -36,7 +37,7 @@ const teamsData = [
   },
   {
     id: 4,
-    image: require('../assets/images/Perfil-4.jpg'),
+    image: require('../assets/images/Perfil-4.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -48,7 +49,7 @@ const teamsData = [
   ,
   {
     id: 5,
-    image: require('../assets/images/Perfil-5.jpg'),
+    image: require('../assets/images/Perfil-5.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -78,7 +79,7 @@ const teamsData = [
   },
   {
     id: 8,
-    image: require('../assets/images/Perfil-8.jpg'),
+    image: require('../assets/images/Perfil-8.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -89,7 +90,7 @@ const teamsData = [
   },
   {
     id: 9,
-    image: require('../assets/images/Perfil-9.jpg'),
+    image: require('../assets/images/Perfil-9.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -100,7 +101,7 @@ const teamsData = [
   },
   {
     id: 10,
-    image: require('../assets/images/Perfil-10.jpg'),
+    image: require('../assets/images/Perfil-10.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -111,7 +112,7 @@ const teamsData = [
   },
   {
     id: 11,
-    image: require('../assets/images/Perfil-11.jpg'),
+    image: require('../assets/images/Perfil-11.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -122,7 +123,7 @@ const teamsData = [
   },
   {
     id: 12,
-    image: require('../assets/images/Perfil-12.jpg'),
+    image: require('../assets/images/Perfil-12.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -133,7 +134,7 @@ const teamsData = [
   },
   {
     id: 13,
-    image: require('../assets/images/Perfil-13.jpg'),
+    image: require('../assets/images/Perfil-13.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -155,7 +156,7 @@ const teamsData = [
   },
   {
     id: 15,
-    image: require('../assets/images/Perfil-15.jpg'),
+    image: require('../assets/images/Perfil-15.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -166,7 +167,7 @@ const teamsData = [
   },
   {
     id: 16,
-    image: require('../assets/images/Perfil-16.jpg'),
+    image: require('../assets/images/Perfil-16.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -177,13 +178,57 @@ const teamsData = [
   },
   {
     id: 17,
-    image: require('../assets/images/Perfil-17.jpg'),
+    image: require('../assets/images/Perfil-17.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
     name: 'Lasquinho Armando',
     designation: 'Tecnologia e Informação',
     description: 'Presidente do Pelouro de Tecnologia e Informação'
+
+  },
+  {
+    id: 18,
+    image: require('../assets/images/Perfil-18.png'),
+    fbLink: 'https://www.facebook.com',
+    twitterLink: 'https://www.twitter.com',
+    linkedinLink: 'https://www.linkedin.com',
+    name: 'Augusto Armando Massariamba',
+    designation: 'Empoderamento da Mulher e a Juventude',
+    description: 'Presidente do Pelouro do Empoderamento da Mulher e a Juventude'
+
+  },
+  {
+    id: 19,
+    image: require('../assets/images/Perfil-19.png'),
+    fbLink: 'https://www.facebook.com',
+    twitterLink: 'https://www.twitter.com',
+    linkedinLink: 'https://www.linkedin.com',
+    name: 'Elina Eduardo Chabana',
+    designation: 'Empoderamento da Mulher e a Juventude',
+    description: 'Presidente do Pelouro do Empoderamento da Mulher e a Juventude'
+
+  },
+  {
+    id: 20,
+    image: require('../assets/images/Perfil-20.png'),
+    fbLink: 'https://www.facebook.com',
+    twitterLink: 'https://www.twitter.com',
+    linkedinLink: 'https://www.linkedin.com',
+    name: 'Saidia Mussa Sumail',
+    designation: 'Empoderamento da Mulher e a Juventude',
+    description: 'Presidente do Pelouro do Empoderamento da Mulher e a Juventude'
+
+  },
+  {
+    id: 21,
+    image: require('../assets/images/Perfil-21.png'),
+    fbLink: 'https://www.facebook.com',
+    twitterLink: 'https://www.twitter.com',
+    linkedinLink: 'https://www.linkedin.com',
+    name: 'Apsínio Duarte Canga',
+    designation: 'Empoderamento da Mulher e a Juventude',
+    description: 'Presidente do Pelouro do Empoderamento da Mulher e a Juventude'
 
   }
   
@@ -206,7 +251,7 @@ function AppTeams() {
               return (
                 <Col sm={3} key={teams.id}>
                   <div className='image'>
-                    <Image src={teams.image} class="img-thumbnail" />
+                    <Image src={teams.image} className = "rounded-circle shadow-4-strong" />
                     <div className='overlay'>
                       <div className='socials'>
                         <ul>

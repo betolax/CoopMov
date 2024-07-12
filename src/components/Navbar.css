@@ -1,0 +1,40 @@
+/* src/components/Navbar.css */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:white;
+    padding: 10px 10px;
+  }
+  
+  .navbar-logo {
+    height: 120px; /* Ajuste conforme necessário */
+    width:300px;
+  }
+  .navbar-logos {
+    height: 200px; /* Ajuste conforme necessário */
+    width: 300px;;
+  }
+
+  .navbar-logos-cooperativa {
+    height: 120px; /* Ajuste conforme necessário */
+    width: 160px;;
+  }
+  
+  .navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar-links li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+  }
+  
+  .navbar-links li a:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  

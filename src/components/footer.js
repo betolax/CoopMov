@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from "react";
 import Container from 'react-bootstrap/Container';
 import {  Row, Col } from 'react-bootstrap';
-
-
-
+import logo from '../assets/images/coops.png';
+import frango from '../assets/logos/municipio.png';
+import cta from '../assets/logos/cta.png';
+import mpesa from '../assets/logos/mpesa.png';
+import anje from '../assets/logos/anje.png';
+import apex from '../assets/logos/apiex.png';
+import linkar from '../assets/logos/linkar.png';
+//import gabi from '../assets/logos/gabi.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 function AppFooter() {
@@ -27,60 +33,49 @@ function AppFooter() {
   }
 
   return (
-    <Container fluid>
-
-<footer className="bg-white text-black py-5">
+    <footer className="bg-white text-black py-5 ">
       <Container>
         <Row>
+          <center className="subtitle">  <h3>Parceiros </h3></center>
           <Col md={3} className="temp">
-            <h5>QUEM SOMOS</h5>
-            <p>
-            Fundada em 2024, a Cooperativa em Movimentos COOPMOV foi 
-            criada por um grupo de profissionais experientes em negócios e 
-            gestão com o objetivo de empoderar jovens e mulheres através de 
-            consultoria especializada, promovendo o desenvolvimento pessoal e 
-            rofissional.
-            </p>
+            <img src={logo} alt="Logo" className="navbar-logos" />
           </Col>
-          <Col md={3} className="temp">
-            <h5>Estrutura Organizacional </h5>
-            <p>
-            A cooperativa é gerida por um conselho de administração formado por mulheres e jovens profissionais,
-             nas áreas de empreendedorismo, desenvolvimento pessoal, profissional e empresarial, Marketing e advocacia, 
-            além de uma equipe executiva responsável pela implementação dos serviços e programas.
-            </p>
-           
-          </Col>
+          <Col md={2} className="temp">
           
-          <Col md={3} className="temp">
-            <h5 className="text-bold">O que Fazemos</h5>
-            <p>
-            Proporcionamos resposta e intervenções de qualidade e a medida
-             das necessidades dos nossos parceiros.
-            </p>
-           
+            <img src={frango} alt="Logo" className="navbar-logos-cooperativa" />
+        
+         </Col>
+          
+          <Col md={2} className="temp">
+          <img src={mpesa} alt="Logo" className="navbar-logos-cooperativa" />
+          <br></br> <br></br>
+          <img src={anje} alt="Logo" className="navbar-logos-cooperativa" />
+    </Col>
+          <Col md={2} className="temp">
+          <img src={apex} alt="Logo" className="navbar-logos-cooperativa" />
+          <br></br> <br></br>
+          <img src={linkar} alt="Logo" className="navbar-logos-cooperativa" />
           </Col>
           <Col md={3} className="subtitle">
-            <h5>Contacte Nos</h5>
-            <p>Cabo Delgado</p>
-            <p>Pemba</p>
-            <p>Av.Marginal</p>
-            <p>Celular: +258 870940008 &  +258840105370</p>
-            <p>Email: Geral@coopmov.com</p>
-           
+          <img src={cta} alt="Logo" className="navbar-logos-cooperativa" />
+
           </Col>
         </Row>
+        <div class="container">
+     <center>
+      <br></br>
+       &copy; Copyright <strong>Connection Mozambique 2024</strong>. Todos os direitos reservados </center>  
+      </div>
+        {
+  showTopBtn && (
+    <div className="go-top" onClick={goTop}></div>
+  )
+}
       </Container>
     </footer>
-
-
-      {
-        showTopBtn && (
-          <div className="go-top" onClick={goTop}></div>
-        )
-      }
-    </Container>
+    
   )
+  
 }
 
 export default AppFooter;

@@ -13,7 +13,7 @@
   }
   
   .work-image {
-    width: 200%;
+    width: 90%;
     height: 600px; /* Define a altura desejada */
     /*object-fit: cover; /* Corta a imagem para caber no container sem distorcer */
     border-radius: 8px;

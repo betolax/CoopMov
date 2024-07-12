@@ -1,4 +1,5 @@
 import Carousel from 'react-bootstrap/Carousel';
+//import React, { Component }  from 'react';
 
 var heroData = [
   {
@@ -18,7 +19,7 @@ var heroData = [
   },
   {
     id: 3,
-    image: require('../assets/images/img-hero3.jpg'),
+    image: require('../assets/images/img-hero3.png'),
     title: 'ESTRUTURA ORGANIZACIONAL',
     description: 'A cooperativa é gerida por um conselho de administração formado por mulheres e jovens profissionais, nas áreas de empreendedorismo, desenvolvimento pessoal, profissional e empresarial, Marketing e advocacia, além de uma equipe executiva responsável pela implementação dos serviços e programas',
     link: 'https://chat.whatsapp.com/EHG2mrObh6x0rEcDfEHvQu'

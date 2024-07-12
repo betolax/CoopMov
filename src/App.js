@@ -26,9 +26,9 @@ function App() {
         <AppHero />
         <AppAbout />
         <AppServices/>
-        <AppWorks/>
-        <AppContact/>
+        <AppWorks/> 
         <AppTeams/>
+        <AppContact/>
         <AppFooter/>
       </main>
     </div>

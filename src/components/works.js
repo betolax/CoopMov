@@ -230,6 +230,13 @@ const CeremonyData = [
     image: require('../assets/images/Coperado 22.png'),
     title: 'Network e Materiais ',
     subtitle: 'Network '
+  },
+  {
+    id: 23,
+    link: 'https://www.google.com',
+    image: require('../assets/images/Perfil-1.png'),
+    title: 'Network e Materiais ',
+    subtitle: 'Network '
   }
 ]
 

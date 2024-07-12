@@ -14,7 +14,7 @@
   
   .work-image {
     width: 90%;
-    height: 600px; /* Define a altura desejada */
+    height: 50%; /* Define a altura desejada */
     /*object-fit: cover; /* Corta a imagem para caber no container sem distorcer */
     border-radius: 8px;
   }

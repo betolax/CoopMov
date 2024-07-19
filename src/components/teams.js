@@ -4,10 +4,11 @@ import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
 import React, { Component }  from 'react';
 
+
 const teamsData = [
   {
     id: 1,
-    image: require('../assets/images/Perfil-1.png') ,
+    image: require('../assets/perfil/Perfil-1.png') ,
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -17,7 +18,7 @@ const teamsData = [
   },
   {
     id: 2,
-    image: require('../assets/images/Perfil-2.png'),
+    image: require('../assets/perfil/Perfil-2.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -27,7 +28,7 @@ const teamsData = [
   },
   {
     id: 3,
-    image: require('../assets/images/Perfil-3.png'),
+    image: require('../assets/perfil/Perfil-3.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -37,7 +38,7 @@ const teamsData = [
   },
   {
     id: 4,
-    image: require('../assets/images/Perfil-4.png'),
+    image: require('../assets/perfil/Perfil-4.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -49,7 +50,7 @@ const teamsData = [
   ,
   {
     id: 5,
-    image: require('../assets/images/Perfil-5.png'),
+    image: require('../assets/perfil/Perfil-5.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -59,7 +60,7 @@ const teamsData = [
   },
   {
     id: 6,
-    image: require('../assets/images/Perfil.jpg'),
+    image: require('../assets/perfil/Perfil.jpg'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -69,7 +70,7 @@ const teamsData = [
   },
   {
     id: 7,
-    image: require('../assets/images/Perfil.jpg'),
+    image: require('../assets/perfil/Perfil.jpg'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -79,7 +80,7 @@ const teamsData = [
   },
   {
     id: 8,
-    image: require('../assets/images/Perfil-8.png'),
+    image: require('../assets/perfil/Perfil-8.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -90,7 +91,7 @@ const teamsData = [
   },
   {
     id: 9,
-    image: require('../assets/images/Perfil-9.png'),
+    image: require('../assets/perfil/Perfil-9.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -101,7 +102,7 @@ const teamsData = [
   },
   {
     id: 10,
-    image: require('../assets/images/Perfil-10.png'),
+    image: require('../assets/perfil/Perfil-10.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -112,7 +113,7 @@ const teamsData = [
   },
   {
     id: 11,
-    image: require('../assets/images/Perfil-11.png'),
+    image: require('../assets/perfil/Perfil-11.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -123,7 +124,7 @@ const teamsData = [
   },
   {
     id: 12,
-    image: require('../assets/images/Perfil-12.png'),
+    image: require('../assets/perfil/Perfil-12.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -134,7 +135,7 @@ const teamsData = [
   },
   {
     id: 13,
-    image: require('../assets/images/Perfil-13.png'),
+    image: require('../assets/perfil/Perfil-13.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -145,7 +146,7 @@ const teamsData = [
   },
   {
     id: 14,
-    image: require('../assets/images/Perfil.jpg'),
+    image: require('../assets/perfil/Perfil.jpg'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -156,7 +157,7 @@ const teamsData = [
   },
   {
     id: 15,
-    image: require('../assets/images/Perfil-15.png'),
+    image: require('../assets/perfil/Perfil-15.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -167,7 +168,7 @@ const teamsData = [
   },
   {
     id: 16,
-    image: require('../assets/images/Perfil-16.png'),
+    image: require('../assets/perfil/Perfil-16.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -178,7 +179,7 @@ const teamsData = [
   },
   {
     id: 17,
-    image: require('../assets/images/Perfil-17.png'),
+    image: require('../assets/perfil/Perfil-17.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -189,7 +190,7 @@ const teamsData = [
   },
   {
     id: 18,
-    image: require('../assets/images/Perfil-18.png'),
+    image: require('../assets/perfil/Perfil-18.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -200,7 +201,7 @@ const teamsData = [
   },
   {
     id: 19,
-    image: require('../assets/images/Perfil-19.png'),
+    image: require('../assets/perfil/Perfil-19.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -211,7 +212,7 @@ const teamsData = [
   },
   {
     id: 20,
-    image: require('../assets/images/Perfil-20.png'),
+    image: require('../assets/perfil/Perfil-20.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -222,7 +223,7 @@ const teamsData = [
   },
   {
     id: 21,
-    image: require('../assets/images/Perfil-21.png'),
+    image: require('../assets/perfil/Perfil-21.png'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',

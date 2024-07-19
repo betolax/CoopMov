@@ -1,10 +1,10 @@
 import Carousel from 'react-bootstrap/Carousel';
-//import React, { Component }  from 'react';
+import React, { Component }  from 'react';
 
 var heroData = [
   {
     id: 1,
-    image: require('../assets/images/img-hero1.jpeg'),
+    image: require('../assets/images/img-hero1.jpg'),
     title: 'QUEM SOMOS',
     description: 'Fundada em 2024, a Cooperativa em Movimentos COOPMOV foi criada por um grupo de profissionais experientes em negócios e gestão com o objetivo de empoderar jovens e mulheres através de consultoria especializada, promovendo o desenvolvimento pessoal e profissional',
 
@@ -35,7 +35,7 @@ function AppHero() {
               return (
                 <Carousel.Item key={hero.id}>
                   <img
-                    className="d-block h-50px w-100 "
+                   // className="d-block h-50px w-100"
                     src={hero.image}
                     alt={"slide " + hero.id}
                   />

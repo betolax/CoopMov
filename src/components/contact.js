@@ -4,19 +4,46 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import { useState } from 'react';
-import React, { Component }  from 'react';
-//import React, { useRef } from 'react';
-//import emailjs from '@emailjs/browser';
+//import React, { Component }  from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 function AppContact() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [number, setNumber] = useState('')
+  const nome = 'CoopMov'
 
   function sendEmail(e){
     e.preventDefault();
-    alert("Teste nome: "+name)
+  
+    const templateParms = {
+      from_name: name,
+      to_name: nome,
+      message : message,
+      email: email,
+      number: number
+
+    }
+
+    emailjs.send('service_hbkxnc7','template_l5v2g0v',templateParms ,'WAOPdXpAuOqLJdZ7s')
+      .then(
+        (response) => {
+          console.log('SUCCESS!',response.status);
+          setName('')
+          setEmail('')
+          setMessage('')
+          setNumber('')
+         alert.message(' O sue email foi enviado com sucesso')
+
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  
 
     
   }
@@ -61,8 +88,8 @@ function AppContact() {
           className="input"
           type="text"
           placeholder="Digite seu o seu numero"
-          onChange={(e) => setName(e.target.value)}
-          value={name}
+          onChange={(e) => setNumber(e.target.value)}
+          value={number}
           required
         />
         </Col>

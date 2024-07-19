@@ -9,7 +9,8 @@ html {
 }
 
 * {
-  max-height: 1000000px;
+  /*cometado a linha e baixo - max-height: 1000000px;*/
+  max-height: 100%;
   margin: 0;
   padding: 0;
 }
@@ -495,7 +496,7 @@ textarea {
 }
 
 .hero-block .carousel-item img {
-  height: 700px;
+ height: 100%;
   width: 100%;
 }
 
@@ -1087,7 +1088,10 @@ textarea {
   }
 
   .hero-block .carousel-caption {
-    display: none;
+    position: absolute;
+    /* codico implementado do css do bizpage e a linha a cima em subtituicao do dispaly:nane;*/
+    
+    
   }
 
   .hero-block .carousel-control {

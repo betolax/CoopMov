@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Image from 'react-bootstrap/Image';
-import React, { Component }  from 'react';
+//import React, { Component }  from 'react';
 
 
 const teamsData = [
@@ -57,17 +57,9 @@ const teamsData = [
     name: 'Miguel Chomar Seleman',
     designation: 'Relações Nacionais e os Cooperados',
     description: 'Presidente do Pelouro das Relações Nacionais e os Cooperados'
-  },
-  {
-    id: 6,
-    image: require('../assets/perfil/Perfil.jpg'),
-    fbLink: 'https://www.facebook.com',
-    twitterLink: 'https://www.twitter.com',
-    linkedinLink: 'https://www.linkedin.com',
-    name: 'Oryza Alice V. da Graça',
-    designation: 'Transporte e Logística',
-    description: 'Presidente do Pelouro de Transporte e Logística'
-  },
+  }
+  //Falta o id 6 foi eliminado 
+  ,
   {
     id: 7,
     image: require('../assets/perfil/Perfil.jpg'),
@@ -146,7 +138,7 @@ const teamsData = [
   },
   {
     id: 14,
-    image: require('../assets/perfil/Perfil.jpg'),
+    image: require('../assets/perfil/Perfil-14.jpg'),
     fbLink: 'https://www.facebook.com',
     twitterLink: 'https://www.twitter.com',
     linkedinLink: 'https://www.linkedin.com',
@@ -230,6 +222,49 @@ const teamsData = [
     name: 'Apsínio Duarte Canga',
     designation: 'Empoderamento da Mulher e a Juventude',
     description: 'Presidente do Pelouro do Empoderamento da Mulher e a Juventude'
+
+  },
+  {
+    id: 22,
+    image: require('../assets/perfil/Perfil-22.jpg'),
+    fbLink: 'https://www.facebook.com',
+    twitterLink: 'https://www.twitter.com',
+    linkedinLink: 'https://www.linkedin.com',
+    name: 'João Dinis',
+    designation: 'Transpotes e Logística',
+    description: 'Presidente do Pelouro de Transpotes e Logística'
+  },
+  {
+    id: 23,
+    image: require('../assets/perfil/Perfil-23.jpg'),
+    fbLink: 'https://www.facebook.com',
+    twitterLink: 'https://www.twitter.com',
+    linkedinLink: 'https://www.linkedin.com',
+    name: 'Mauro',
+    designation: 'Transpotes e Logística',
+    description: 'Vice-presidetnte do Conselho de Direção'
+
+  },
+  {
+    id: 24,
+    image: require('../assets/perfil/Perfil-24.jpg'),
+    fbLink: 'https://www.facebook.com',
+    twitterLink: 'https://www.twitter.com',
+    linkedinLink: 'https://www.linkedin.com',
+    name: 'Natércia',
+    designation: 'Empoderamento da Mulher e a Juventude',
+    description: 'Vice-presidente do Conselho Fiscal'
+
+  },
+  {
+    id: 25,
+    image: require('../assets/perfil/Perfil-25.jpg'),
+    fbLink: 'https://www.facebook.com',
+    twitterLink: 'https://www.twitter.com',
+    linkedinLink: 'https://www.linkedin.com',
+    name: 'Seragy Abudo Pastela',
+    designation: 'Coordenador dos programas culturais',
+    description: 'Coordenador dos programas culturais e educativos'
 
   }
   

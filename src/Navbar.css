@@ -1,31 +1,64 @@
 /* src/components/Navbar.css */
 .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color:white;
-    padding: 10px 10px;
-  }
-  
-  .navbar-logo {
-    height: 70px; /* Ajuste conforme necessário */
-    width:100px;
-  }
-  
-  .navbar-links {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-  }
-  
-  .navbar-links li a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-  }
-  
-  .navbar-links li a:hover {
-    background-color: #555;
-    border-radius: 4px;
-  }
-  
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 10px 10px;
+}
+
+.navbar-logo {
+  height: 50px;
+  /* Ajuste conforme necessário */
+  width: 100px;
+  margin: 0 !important;
+
+}
+
+
+
+.singleCol {
+  max-width: 310px;
+  margin: 0 auto;
+  padding-left: 4px;
+
+}
+
+.social-media-icons-white a {
+  color: rgb(12, 68, 187);
+  font-size: 2rem;
+  padding: 5px;
+  margin: 5px;
+}
+
+.navbar-lo{
+  width: 200px;
+  height: 100px;
+}
+
+.navb {
+  height: 300px;
+  /* Ajuste conforme necessário */
+  width: 550px;
+  margin: 0 !important;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+
+}
+
+.navbar-links li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+

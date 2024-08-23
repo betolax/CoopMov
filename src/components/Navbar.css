@@ -17,8 +17,13 @@
   }
 
   .navbar-logos-cooperativa {
-    height: 120px; /* Ajuste conforme necessário */
+    height: 160px; /* Ajuste conforme necessário */
     width: 160px;;
+  }
+
+  .navbar-logos-coopera{
+    height: 400px; /* Ajuste conforme necessário */
+    width: 300px;
   }
   
   .navbar-links {

@@ -59,7 +59,6 @@ function AppContact() {
 
         <Form className='contact-form'  onSubmit={sendEmail} >
         <div className="container">
-      <h1 className="title">Contato</h1>
   
       <Row>
       <Col sm={4}>
